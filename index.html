@@ -72,7 +72,7 @@
                         alt="rectangle" />
                     </figure>
                     <div class="card-body">
-                      <h2 class="card-title">parallelogram</h2>
+                      <h2 class="card-title">Parallelogram</h2>
                       <p class="text-center">Area(A) = b × h </p>
                       <div class="flex">
                         <input id="parallelogram-base" class="w-20 text-2xl p-2 rounded-sm" type="text" placeholder="b">
@@ -89,6 +89,31 @@
                     </div>
                   </div>
                
+                <!--Rhombus Card-->
+                <div class="card  w-full bg-base-100 shadow-xl">
+                    <figure class="h-40">
+                      <img
+                        src="images/rhombus.png"
+                        alt="rhombus" />
+                    </figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Rhombus</h2>
+                      <p class="text-center">Area(A) = d1 × d2 </p>
+                      <div class="flex">
+                        <input id="rhombus-diagonal1" class="w-20 text-2xl p-2 rounded-sm" type="text" placeholder="d1">
+                      <span class="mr-4 ml-2 mt-3">cm</span>
+                      <input  class="w-20 text-2xl p-2 rounded-sm" type="text" name="" id="rhombus-diagonal2" placeholder="d2">
+                      <span class="mr-4 ml-2 mt-3">cm</span>
+                      </div>
+                      <div>
+                        <p class="text-2xl">Area: <span id="rhombus-area"></span> <span>cm</span><sup>2</sup></p>
+                      </div>
+                      <div class="card-actions  ">
+                        <button onclick="calculateRhombusArea()" class="btn btn-primary w-full">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+               
                 
             </div>
             <!--Area calculation container-->
@@ -101,5 +126,6 @@
     <script src="scripts/triangle-calculate.js"></script>
     <script src="scripts/rectangle-calculate.js"></script>
     <script src="scripts/parallelogram-calculate.js"></script>
+    <script src="scripts/rhombus-calculate.js"></script>
 </body>
 </html>
