@@ -3,18 +3,18 @@ function calculateRectangleArea(){
     //get triangle base value
     const rectangleBaseInput=document.getElementById('rectangle-base');
     const rectangleBaseText=rectangleBaseInput.value;
-    const base=parseFloat(rectangleBaseText);
-    console.log(base);
+    const length=parseFloat(rectangleBaseText);
+    console.log(length);
     
     //get triangle height value
 
     const rectangleHeightInput=document.getElementById('rectangle-height');
      const rectangleHeightText=rectangleHeightInput.value;
-     const height=parseFloat(rectangleHeightText);
-     console.log(height);
+     const weight=parseFloat(rectangleHeightText);
+     console.log(weight);
 
      //calculate Triangle Area
-     const area=base*height;
+     const area=length*weight;
      console.log('Area of the rectangle is',area);
     
      //display Triangle area
